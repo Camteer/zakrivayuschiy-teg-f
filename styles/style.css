@@ -48,7 +48,7 @@
   padding: 136px 0 25px;
   height: clamp(323px, 364px, 100%);
   border: 2px solid var(--themes-main-color);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   background-color: var(--themes-background);
   text-transform: uppercase;
 }
@@ -87,12 +87,16 @@
   position: relative;
 }
 
-.theme-menu__button:hover {
+.theme-menu__button:hover .theme-menu__button-text{
   opacity: 0.6;
 }
 
 .theme-menu__button:focus {
   outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
 }
 
 .theme-menu__button-text::after {
@@ -116,14 +120,14 @@
 }
 
 .theme-menu__button-text:hover::after {
-  width: 100%;
+  width: 100%;  
 }
 
 .card__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 57px;
+  gap: 50px;
 }
 
 .card__list-title {
@@ -210,7 +214,7 @@
   line-height: normal;
   text-shadow: -1px 0 var(--themes-background), 0 1px var(--themes-background),
     1px 0 var(--themes-background), 0 -1px var(--themes-background);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   font-weight: 400;
   opacity: 0.5;
@@ -225,7 +229,7 @@
   cursor: pointer;
   width: 130px;
   height: 38px;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy ;
   font-size: 14px;
   overflow: hidden;
   z-index: 0;
@@ -270,6 +274,7 @@
   position: relative;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -311,7 +316,7 @@
   border: 2px solid var(--themes-main-color);
   color: var(--themes-main-color);
   cursor: pointer;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   overflow: hidden;
   z-index: 0;
 }
@@ -351,8 +356,8 @@
 }
 
 .footer {
-  margin-block-start: 54px;
-  margin-block-end: 115px;
+  margin-block-start: 50px;
+  margin-block-end: 98px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -391,7 +396,7 @@
 
 .dialog__text {
   color: var(--themes-main-color);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -420,10 +425,6 @@
     flex-direction: column;
     min-height: 84px;
     max-width: 310px;
-  }
-
-  .card__list {
-    gap: 50px;
   }
 
   .label {

@@ -33,6 +33,10 @@
   transition: opacity 0.3s ease;
 }
 
+.theme-menu__button:focus-visible {
+  transition: opacity 0.3s ease;
+}
+
 .theme-menu__button-text::after {
   transition: width 0.3s ease;
 }

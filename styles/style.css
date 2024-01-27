@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family), sans-serif;
-  font-weight: var(--weight-main);
+  font-variation-settings: "wght" var(--font-main-weight, 400);
   background-color: var(--themes-background);
   color: var(--themes-main-color);
   background-image: repeating-linear-gradient(
@@ -126,7 +126,7 @@
 
 .card__list-title {
   font-size: 18px;
-  font-weight: var(--weight-bold);
+  font-variation-settings: "wght" var(--weight-bold, 400);
   padding: 5px 10px;
 }
 
@@ -291,13 +291,10 @@
   transform-origin: center;
 }
 
-
 .card__icon-button:hover .core {
   fill: var(--themes-main-color);
   opacity: 1;
 }
-
-
 
 .save-button {
   display: flex;

@@ -87,7 +87,7 @@
   position: relative;
 }
 
-.theme-menu__button:hover .theme-menu__button-text{
+.theme-menu__button:hover .theme-menu__button-text {
   opacity: 0.6;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .theme-menu__button-text:hover::after {
-  width: 100%;  
+  width: 100%;
 }
 
 .card__list {
@@ -229,7 +229,7 @@
   cursor: pointer;
   width: 130px;
   height: 38px;
-  font-family: var(--accent-font-family), fantasy ;
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   overflow: hidden;
   z-index: 0;
@@ -369,14 +369,15 @@
 }
 
 .dialog {
-  max-width: 357px;
+  max-width: 340px;
   max-height: 193px;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 32px 42px;
   border: 2px solid var(--themes-main-color);
   background: var(--themes-background);
 }
+
 .dialog[open] {
   display: flex;
   flex-direction: column;
@@ -384,13 +385,13 @@
 }
 
 .dialog-icon {
-  width: 39px;
-  height: 39px;
+  min-width: 39px;
+  min-height: 39px;
 }
 
 .dialog-conteiner {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 

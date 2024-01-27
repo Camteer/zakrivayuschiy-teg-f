@@ -83,6 +83,7 @@
 
 .theme-menu__button-text {
   position: relative;
+  transition: color 0.3s;
 }
 
 .theme-menu__button:hover {
@@ -126,9 +127,9 @@
   width: 100%;
 }
 
-.theme-menu__button-text {
+/*.theme-menu__button-text {
   transition: color 0.3s;
-}
+}*/
 
 .card__list {
   display: flex;
@@ -290,7 +291,7 @@
   outline: none;
 }
 
-.card__icon-button:focus-visible .like-icon{
+.card__icon-button:focus-visible .like-icon {
   outline-offset: -1px;
   outline: 2px solid var(--themes-main-color);
   transition: 0.3s ease-in;
@@ -465,6 +466,8 @@
 @media (375px >= width) {
   .save-button {
     flex-direction: column;
+    min-height: 84px;
+    max-width: 310px;
   }
 
   .card__list {
@@ -480,11 +483,7 @@
     padding-top: 118px;
   }
 
-  .save-button {
-    min-height: 84px;
-    max-width: 310px;
-  }
-  .floppy-icon{
+  .floppy-icon {
     width: 29px;
     height: 29px;
   }

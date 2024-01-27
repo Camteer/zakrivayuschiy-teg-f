@@ -1,17 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font-family: 'Inter-Varible';
-    --accent-font-family: 'PressStart2P';
-    --weight-bold: 700;
-    --weight-main: 400;
-    --themes-background: #fff;
-    --heart: #FF0000;
-    --themes-main-color-for-button : #fff;
-    --themes-main-color: #000; 
-    --line-gradient: #d3d3d3;
-    --from-gradient: #e7e7e7;
-    --to-gradient: #1a1a1a;
+  --main-font-family: "Inter-Varible";
+  --accent-font-family: "PressStart2P";
+  --weight-bold: 700;
+  --weight-main: 400;
+  --themes-background: #fff;
+  --heart: #ff0000;
+  --themes-main-color-for-button: #fff;
+  --themes-main-color: #000;
+  --line-gradient: #d3d3d3;
+  --from-gradient: #e7e7e7;
+  --to-gradient: #1a1a1a;
 }
 
 /* Здесь вы напишете основную часть стилей страницы.

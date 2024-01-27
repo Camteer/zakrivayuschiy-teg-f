@@ -87,7 +87,7 @@
   position: relative;
 }
 
-.theme-menu__button:hover .theme-menu__button-text {
+.theme-menu__button-text:hover {
   opacity: 0.6;
 }
 

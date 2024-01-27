@@ -29,7 +29,7 @@
   }
 }
 
-.theme-menu__button:hover {
+.theme-menu__button-text:hover {
   transition: opacity 0.3s ease;
 }
 

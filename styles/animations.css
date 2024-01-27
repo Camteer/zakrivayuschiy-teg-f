@@ -53,6 +53,18 @@
   transition: transform 0.5s ease-in-out;
 }
 
+.save-button:focus-visible {
+  transition: box-shadow 0.3s ease;
+}
+
+.save-button::before {
+  transition: transform 0.5s ease-in-out;
+}
+
+.save-button:hover::before {
+  transition: transform 0.5s ease-in-out;
+}
+
 .card__icon-button:focus-visible .like-icon {
   transition: outline 0.3s ease-in;
 }

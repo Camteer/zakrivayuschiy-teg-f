@@ -6,6 +6,7 @@
 */
 :root.theme-dark {
   --weight-main: 465;
+  --weight-bold: 785;
   --themes-background: #000;
   --themes-main-color: #00cc14;
   --themes-main-color-for-button: #00cc14;
@@ -17,6 +18,7 @@
 
 :root.theme-light {
   --weight-main: 400;
+  --weight-bold: 785;
   --themes-background: #fff;
   --themes-main-color: #000;
   --line-gradient: #d3d3d3;
@@ -29,6 +31,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --weight-main: 465;
+    --weight-bold: 785;
     --heart: #ff0000;
     --themes-background: #000;
     --themes-main-color: #00cc14;

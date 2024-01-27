@@ -17,19 +17,122 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {  
     transform: scale(1);
   }
 } 
 
+@keyframes strelka {
+  to {
+    left: -16px;
+  }
+}
+
 @keyframes spark-animation {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
+.theme-menu__button:hover {
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button-text::after {
+  transition: width 0.3s ease;
+}
+
+.theme-menu__button:disabled::before {
+  animation: strelka 0.5s ease-in-out infinite alternate;
+}
+
+.card__like-button:focus-visible {
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button::before {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__icon-button:focus-visible .like-icon {
+  transition: outline 0.3s ease-in;
+}
+
+
+.core {
+  fill: transparent ;
+  transition: fill 0.3s linear 0.05s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--themes-main-color, #000);
+  opacity: 1; 
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--themes-main-color, #000);
+  opacity: 1;
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart, #ff0000);
+  opacity: 1;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart, #ff0000);
+  opacity: 1;
+  transition: fill 0.3s linear 0.05s;
+}
+
+.contour {
+  fill: var(--themes-main-color);
+  transition: fill 0.1s linear;
+}
+
+.is-liked .contour {
+  fill: var(--heart);
+  transition: fill 0.3s linear   0.06s;
+}
+
+.is-liked .heart .main-body {
+  fill: var(--heart);
+  transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out 0.03s;
+  opacity: 1;
+}
+
+.is-liked .heart .core {
+  fill: var(--heart);
+  transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out 0.03s;
+  opacity: 1;
+}
+
+
+.is-liked .sparks {
+  animation: spark-animation 0.3s ease-in 0.3s alternate;
+}
+
+.like-icon.is-liked {
+  animation: scale-heart 0.3s 0.1s ease-in both;
+} 

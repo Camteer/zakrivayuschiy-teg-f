@@ -29,7 +29,7 @@
   }
 }
 
-.theme-menu__button-text:hover {
+.theme-menu__button:hover {
   transition: opacity 0.3s ease;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .theme-menu__button-text::after {
-  transition: width 0.3s ease;
+  transition: width 0.3s ease;  
 }
 
 .theme-menu__button:disabled::before {

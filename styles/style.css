@@ -87,7 +87,7 @@
   position: relative;
 }
 
-.theme-menu__button-text:hover {
+.theme-menu__button:hover {
   opacity: 0.6;
 }
 
@@ -113,13 +113,17 @@
   pointer-events: none;
 }
 
+.theme-menu__button:disabled .theme-menu__button-text::after {
+  width: 0%;
+}
+  
 .theme-menu__button:disabled::before {
   position: absolute;
   content: "▶";
   left: -20px;
 }
 
-.theme-menu__button-text:hover::after {
+.theme-menu__button:focus-visible .theme-menu__button-text::after {
   width: 100%;
 }
 
@@ -369,7 +373,7 @@
 }
 
 .dialog {
-  max-width: 340px;
+  max-width: 357px;
   max-height: 193px;
   width: 100%;
   height: 100%;
@@ -440,5 +444,8 @@
   .floppy-icon {
     width: 29px;
     height: 29px;
+  }
+  .dialog {
+    max-width: 340px;
   }
 }
